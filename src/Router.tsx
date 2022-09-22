@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { UseEffectTest } from './components/UseEffectTest'
 import { DefaultLayout } from './layouts/DefaultLayout/index'
 import { History } from './pages/History'
 import { Home } from './pages/Home'
@@ -9,6 +10,7 @@ export function Router() {
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />
+        <Route path="/test" element={<UseEffectTest />} />
       </Route>
     </Routes>
   )
